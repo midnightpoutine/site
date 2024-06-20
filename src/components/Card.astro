@@ -1,0 +1,42 @@
+---
+//src/components/Card.astro
+const {name, aboutMe, instagram, indiegogo, fundraiser, profileImage } = Astro.props;
+
+import '../styles/card.css';
+---
+
+<div class="container">
+    <div class="card-container">
+        <div class="descripcion">
+            <h1>{name}</h1>
+            <p>{aboutMe}</p>
+            <div class="fundraiser-links">
+                <a href={fundraiser}>[Montreal Fundraiser]</a>
+                <a href={indiegogo}>[Indiegogo Campaign]</a>
+            </div>
+            <div class="icons">
+                <a href={instagram} class="hover-text" target="_blank">
+                    <span class="tooltip-text" id="fade">
+                        Instagram
+                    </span>
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href={fundraiser} class="hover-text" target="_blank">
+                    <span class="tooltip-text" id="fade">
+                        Montreal Fundraiser
+                    </span>
+                    <i class="bi bi-calendar"></i>
+                </a>
+                <a href={indiegogo} class="hover-text" target="_blank">
+                    <span class="tooltip-text" id="fade">
+                        Indiegogo
+                    </span>
+                    <i class="bi bi-currency-dollar"></i>
+                </a>
+            </div>
+        </div>
+        <div class="image">
+            <img src={profileImage} alt="">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+---
+// src/pages/index.astro
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+---
+
+<!-- profile2.webp you can remove | Photo <a href="https://unsplash.com/es/@charlesdeluvio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">charlesdeluvio</a> en <a href="https://unsplash.com/es/fotos/hombre-con-gorro-negro-kVg2DQTAK7c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   -->
+
+<!-- You can replace the card's data with your own here. -->
+<BaseLayout title="Midnight Poutine Landing Page" description="Simple landing page for midnight poutine, burning man camp.">
+	<Card
+	  name="Midnight Poutine"
+	  aboutMe={`We are Midnight Poutine! Legendary Burning Man Camp from Quebec, Montreal, we've been serving poutine to hungry burners since 2009. Through delicious fries, cheese and gravy served at midnight, we hope to gift the Playa with a little delicious piece of Quebecois culture.`}
+	  indiegogo="https://www.indiegogo.com/projects/midnight-poutine-at-burning-man-2024--2#/"
+	  instagram="https://www.instagram.com/midnightpoutineqc/"
+	  fundraiser="https://thepointofsale.com/tickets/onlyfries"
+	  profileImage="/images/midnightpoutine.png"
+	/>
+</BaseLayout>
+
+<!--
+	"Hi there!, I'm Brian. I hope this small template helps you gain visibility while you build great projects. Thank you for using it. I wish you success in everything you set out to do; you will surely achieve great things.
+
+	Here is my GitHub {https://github.com/alcarazbrian}. You can help me by following me, giving a Star to the template, and sharing it so others can see and use it.
+
+	Have a great day!"
+ -->
